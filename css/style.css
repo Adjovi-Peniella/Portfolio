@@ -1,24 +1,13 @@
-/* ========================================================================== */
-/*  VARIABLES (couleurs changées : beige / rose pâle / or / moutarde)         */
-/* ========================================================================== */
 :root {
     --color-primary: #D9A441;
-    /* OR DOUX */
     --color-primary-dark: #B9862C;
-    /* OR + FONCÉ */
     --color-accent: #E9CFCF;
-    /* ROSE PÂLE */
     --color-text: #4A3A2F;
-    /* BRUN LÉGER */
     --color-text-light: #fff;
     --color-bg-body: #F8EFE6;
-    /* BEIGE */
     --color-bg-header: linear-gradient(135deg, #E9CFCF, #D9A441);
-    /* ROSE → OR */
     --color-bg-footer: linear-gradient(135deg, #B9862C, #4A3A2F);
-    /* OR Foncé → BRUN */
     --color-border-light: #E6DCD3;
-    /* BEIGE CLAIR */
 
     --font-body: 'Poppins', sans-serif;
     --font-title: 'Montserrat', sans-serif;
@@ -36,9 +25,6 @@
     --shadow-hover: 0 6px 18px rgba(74, 58, 47, 0.18);
 }
 
-/* ========================================================================== */
-/*  GLOBAL                                                                    */
-/* ========================================================================== */
 body {
     margin: 0;
     font-family: var(--font-body);
@@ -54,9 +40,6 @@ iframe {
     height: auto;
 }
 
-/* ========================================================================== */
-/*  HEADER                                                                    */
-/* ========================================================================== */
 body>header {
     text-align: center;
     padding: var(--spacing-xl) var(--spacing-m);
@@ -114,9 +97,6 @@ body>header nav a:hover {
     transform: translateY(-2px);
 }
 
-/* ========================================================================== */
-/*  MAIN                                                                      */
-/* ========================================================================== */
 main {
     max-width: 1100px;
     margin: auto;
@@ -154,9 +134,6 @@ main h2::after {
     border-radius: var(--radius-s);
 }
 
-/* ========================================================================== */
-/*  FOOTER                                                                    */
-/* ========================================================================== */
 footer {
     margin-top: var(--spacing-xl);
     background: var(--color-bg-footer);
@@ -187,9 +164,6 @@ footer .socials a:hover {
     color: var(--color-accent);
 }
 
-/* ========================================================================== */
-/*  RESPONSIVE                                                                */
-/* ========================================================================== */
 @media (min-width: 768px) {
     body>header nav ul {
         flex-direction: row;
