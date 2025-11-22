@@ -57,21 +57,21 @@ section h2 {
 
 /* Objectifs 🎯 */
 #objectifs-projet::before {
-    content: "🚀";
+    content: "🎯";
     color: #d4a017;
     /* moutarde */
 }
 
-/* Compétences 🧰 */
+/* Compétences 🛠️ */
 #competences-visees::before {
-    content: "🧰";
+    content: "🛠️";
     color: #d6a98a;
     /* rose doré */
 }
 
-/* Résultat 🏁 */
+/* Résultat 🏆 */
 #resultat-projet::before {
-    content: "🏁";
+    content: "🏆";
     color: #c9a227;
     /* or */
 }
