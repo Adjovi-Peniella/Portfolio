@@ -1,0 +1,81 @@
+/* ----- RESET BASIQUE ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- STYLE DU BODY ----- */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f8f3e9;
+    /* Beige clair */
+    color: #3a2f2a;
+    /* Brun foncé */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ----- TITRES ----- */
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    color: #d6a98a;
+    /* Rose pâle doré */
+    letter-spacing: 1px;
+}
+
+/* ----- LISTE DES PROJETS ----- */
+ul {
+    list-style: none;
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    gap: 25px;
+}
+
+/* ----- UN PROJET ----- */
+li {
+    background: #f4e8da;
+    /* Beige rosé */
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-left: 5px solid #c9a227;
+    /* Or */
+}
+
+li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    border-left-color: #d4a017;
+    /* Jaune moutarde */
+}
+
+/* ----- LIENS ----- */
+a {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c9a227;
+    /* Or */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #d4a017;
+    /* Moutarde */
+    text-decoration: underline;
+}
+
+/* ----- PIED DE PAGE ----- */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7a6c60;
+    /* Brun clair */
+}

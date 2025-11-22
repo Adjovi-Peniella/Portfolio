@@ -1,0 +1,146 @@
+/* --- Styles généraux --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Police moderne et lisible */
+    color: #222;
+    /* Texte gris foncé pour une bonne lisibilité */
+    background: #fefefe;
+    /* Arrière-plan légèrement cassé (pas blanc pur) */
+    margin: 0;
+    /* Supprime la marge du body */
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    /* Centre tout le contenu */
+    padding: 40px 10px;
+    /* Espace intérieur */
+    background: linear-gradient(135deg, #1b2a41, #274472);
+    /* Dégradé bleu foncé élégant */
+    border-bottom: 3px solid #16213e;
+    /* Ligne foncée en bas du header */
+    color: #fff;
+    /* Texte en blanc */
+    margin: 15px;
+}
+
+/* Figure contenant la photo et le nom */
+header figure {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+header figure img {
+    width: 130px;
+    height: auto;
+    border-radius: 45%;
+    border: 3px solid #00b4d8;
+    /* Bordure bleu cyan futuriste */
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+    /* Légère lueur bleue */
+}
+
+header figure figcaption {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #caf0f8;
+    /* Bleu clair pour le nom */
+}
+
+/* Titre principal du site */
+header h1 {
+    margin: 15px 0 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* Liste de navigation principale */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #90e0ef;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #48cae4;
+}
+
+/* --- Main --- */
+main>h1 {
+    text-align: center;
+    color: #1b2a41;
+    font-size: 2rem;
+    margin: 25px 0;
+}
+
+main>section {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+main>section h2 {
+    color: #0077b6;
+    font-size: 1.6em;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 5px;
+}
+
+/* --- Liens internes --- */
+main nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+main nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+main nav a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+main nav a:hover {
+    color: #00b4d8;
+}
+
+/* --- Footer --- */
+footer {
+    background: #1b2a41;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    border-top: 3px solid #274472;
+}
+
+footer a {
+    color: #00b4d8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #90e0ef;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1 - Portfolio Étudiant</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="haut" aria-label="En-tête du site">
+        <figure aria-labelledby="legende-photo">
+            <img src="images/photo.jpg" alt="Portrait de l'étudiant">
+            <figcaption id="legende-photo">Étudiant en développement</figcaption>
+        </figure>
+
+        <h1>Portfolio Étudiant</h1>
+
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="https://www.univ-littoral.fr/" target="_blank">ULCO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article aria-labelledby="titre-p1" class="projets">
+
+            <header>
+                <h2 id="titre-p1">Projet 1<br> Initiation au HTML & CSS</h2>
+                <figure>
+                    <img src="images/projet1.jpg" alt="Aperçu du projet HTML/CSS">
+                    <figcaption>Exemple d’interface réalisée</figcaption>
+                </figure>
+            </header>
+
+            <section aria-labelledby="desc-p1">
+                <h2 id="desc-p1">Présentation</h2>
+                <p>
+                    Ce projet marque une première immersion dans la création de pages web.
+                    Il permet d’explorer la structure HTML5, d’utiliser des balises sémantiques
+                    et d’appliquer des styles simples grâce au CSS.
+                </p>
+            </section>
+
+            <section aria-labelledby="obj-p1">
+                <h2 id="obj-p1">Objectifs pédagogiques</h2>
+                <ul>
+                    <li>Comprendre la logique d’un document HTML5.</li>
+                    <li>Construire un mini-site multi-pages.</li>
+                    <li>Styliser du contenu à l’aide du CSS.</li>
+                    <li>Mettre le projet en ligne via GitHub Pages.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="skills-p1">
+                <h2 id="skills-p1">Compétences développées</h2>
+                <ul>
+                    <li>Structuration et organisation d’un site web en HTML.</li>
+                    <li>Personnalisation visuelle via CSS (mise en page, typographie, couleurs).</li>
+                    <li>Responsive design avec media queries.</li>
+                    <li>Intégration d’images et de contenus accessibles.</li>
+                    <li>Déploiement en ligne et validation W3C.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="res-p1">
+                <h2 id="res-p1">Rendu final</h2>
+                <p>
+                    Le site obtenu comporte une page d’accueil, une galerie de projets ainsi qu’une page détaillée pour
+                    chaque réalisation.
+                    Il respecte les standards HTML/CSS et s’adapte aux différentes tailles d’écran.
+                </p>
+                <p>
+                    <a href="#" class="btn" target="_blank">
+                        <i class="fa-solid fa-eye"></i> Aperçu du projet
+                    </a>
+                </p>
+            </section>
+
+            <nav class="nav-projets" aria-label="Navigation entre projets">
+                <a href="projets/projet2.html" class="next">Projet suivant →</a>
+            </nav>
+
+        </article>
+    </main>
+
+    <footer aria-label="Pied de page">
+        <p>&copy; 2025 <strong>Portfolio Étudiant</strong>. Tous droits réservés.</p>
+
+        <div class="socials" role="navigation" aria-label="Réseaux sociaux">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/" target="_blank" aria-label="X">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

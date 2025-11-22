@@ -1,0 +1,54 @@
+/* --- Mise en page générale des projets --- */
+.projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background-color: #f5f8fa;
+}
+
+/* --- Chaque projet --- */
+.projet {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Image du projet (vignette) --- */
+.projet img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* --- Titre du projet --- */
+.projet h2 {
+  margin-top: 15px;
+  color: #1e3a5f;
+  font-size: 1.3em;
+}
+
+/* --- Description du projet --- */
+.projet p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* --- en fonctin de l'ecran comme sur téléphone, 1 projet par ligne --- */
+@media (max-width: 768px) {
+  .projets {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,138 @@
+/* ==========================================================================
+   En-tête d’Article – Thème beige / rose poudré / or
+   ========================================================================== */
+
+/* Conteneur de l’en-tête */
+article>header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Image principale de l’article */
+article>header img {
+    max-width: 100%;
+    height: auto;
+    margin-top: var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d6a98a;
+    /* rose doré */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article>header img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* ==========================================================================
+   Titres de Sections (H2 + Icônes)
+   ========================================================================== */
+
+section h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: var(--font-size-h2);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: 6px;
+    border-bottom: 2px solid #d6c7ad;
+    /* beige poudré */
+    color: #3a2f2a;
+    /* texte brun */
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Icônes personnalisées (palette douce et professionnelle)
+   ========================================================================== */
+
+/* Description ✨ */
+#description-projet::before {
+    content: "✨";
+    /* plus élégant */
+    color: #c9a227;
+    /* or */
+}
+
+/* Objectifs 🎯 */
+#objectifs-projet::before {
+    content: "🚀";
+    color: #d4a017;
+    /* moutarde */
+}
+
+/* Compétences 🧰 */
+#competences-visees::before {
+    content: "🧰";
+    color: #d6a98a;
+    /* rose doré */
+}
+
+/* Résultat 🏁 */
+#resultat-projet::before {
+    content: "🏁";
+    color: #c9a227;
+    /* or */
+}
+
+/* ==========================================================================
+   Style général du contenu
+   ========================================================================== */
+
+/* Paragraphes */
+section p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+    color: #3a2f2a;
+    /* brun foncé */
+}
+
+/* Listes */
+section ul {
+    padding-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+section li {
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-body);
+    color: #6b5c55;
+    /* brun clair */
+}
+
+/* Liens */
+section a {
+    color: #c9a227;
+    /* or */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+section a:hover {
+    color: #d4a017;
+    /* moutarde plus vive */
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+section a:focus {
+    outline: 3px solid #d6a98a;
+    /* rose doré */
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    article>header img {
+        max-width: 80%;
+    }
+
+    section h2 {
+        font-size: var(--font-size-h2-desktop);
+    }
+}
